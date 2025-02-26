@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let n=prompt("enter the number :")
+         function toggleDoors(n){
+                let openDoors = [];
+                for (let i = 1; i * i <= n; i++) {
+                    openDoors.push(i * i);
+                }
+                return openDoors;
+            }
+
+            let result = toggleDoors(n);
+            document.write("Open doors:", result);
+
+    </script>
+</body>
+</html>
