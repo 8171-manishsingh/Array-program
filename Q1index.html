@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Name_is =  prompt("Enter a Name to check palindron or not : ")
+let revers_name ="";
+
+for(let i=Name_is.length-1 ; i>=0; i--)
+{
+    revers_name += Name_is[i];
+}
+
+if(revers_name==Name_is )
+{
+    document.write(Name_is + " Is a palindron Name !");
+}
+else 
+{
+    document.write(Name_is + " Is not a palindron Number !");
+}
+    </script>
+</body>
+</html>
