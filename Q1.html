@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       // Creating an array
+let numbers = [1, 2, 3, 4, 5];
+
+// push() - Adds elements to the end
+numbers.push(6);
+document.write("<br>"+"push:"+ numbers);
+
+// pop() - Removes the last element
+numbers.pop();
+document.write("<br>"+"pop:"+ numbers);
+
+// shift() - Removes the first element
+numbers.shift();
+document.write("<br>"+"shift:"+ numbers);
+
+// unshift() - Adds elements to the beginning
+numbers.unshift(0);
+document.write("<br>"+"unshift:"+numbers);
+
+// concat() - Merges arrays
+let moreNumbers = [6, 7, 8];
+let mergedArray = numbers.concat(moreNumbers);
+document.write("<br>"+"concat:"+ mergedArray);
+
+// slice() - Extracts a section
+let slicedArray = mergedArray.slice(2, 5);
+document.write("<br>"+"slice:"+ slicedArray);
+
+// splice() - Modifies an array
+mergedArray.splice(2, 2, 10, 11);
+document.write("<br>"+"splice:"+mergedArray);
+
+// map() - Transforms elements
+let squared = numbers.map(num => num * num);
+document.write("<br>"+"map:"+ squared);
+
+// filter() - Filters elements
+let filtered = numbers.filter(num => num > 2);
+document.write("<br>"+"filter:"+filtered);
+
+// reduce() - Reduces elements
+let sum = numbers.reduce((acc, num) => acc + num, 0);
+document.write("<br>"+"reduce:"+sum);
+
+// find() - Finds an element
+let found = numbers.find(num => num > 2);
+document.write("<br>"+"find:"+ found);
+
+// findIndex() - Finds index of an element
+let foundIndex = numbers.findIndex(num => num > 2);
+document.write("<br>"+"findIndex:"+foundIndex);
+
+// includes() - Checks if element exists
+document.write("<br>"+"includes 3:"+numbers.includes(3));
+
+// indexOf() - Finds the index of an element
+document.write("<br>"+"indexOf 3:"+numbers.indexOf(3));
+
+// reverse() - Reverses the array
+let reversed = [...numbers].reverse();
+document.write("<br>"+"reverse:"+ reversed);
+
+// sort() - Sorts the array
+let sorted = [...numbers].sort((a, b) => b - a);
+document.write("<br>"+"sort:", sorted);
+
+// every() - Checks if all elements pass a test
+document.write("<br>"+"every > 0:"+numbers.every(num => num > 0));
+
+// some() - Checks if some elements pass a test
+document.write("<br>"+"some > 4:"+ numbers.some(num => num > 4));
+
+// join() - Joins elements into a string
+document.write("<br>"+"join:"+numbers.join(" - "));
+
+// forEach() - Iterates over elements
+document.write("<br>"+"forEach:");
+numbers.forEach(num => document.write(num));
+
+    </script>
+</body>
+</html>
